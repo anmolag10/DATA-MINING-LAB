@@ -1,0 +1,37 @@
+ Data-Flows  Oct 21, 2021 12:27:03 PM   SQW03415I: Flow execution started for SQW005 (/Product/data-flows/ProductDataFlow)
+ Data-Flows  Oct 21, 2021 12:27:03 PM   SQW38501I: Execution log file:  C:/Users/student/Desktop/190953140/Product/run-profiles/logs/ProductDataFlow_SQW005.txt
+ Data-Flows  Oct 21, 2021 12:27:03 PM   SQW38509I: Execution temporary work directory:  C:/Users/student/Desktop/190953140/Product/run-profiles/tmp\ProductDataFlow_SQW005
+ Data-Flows  Oct 21, 2021 12:27:05 PM   SQW03275I: Execution of SQL statement "SET CURRENT SCHEMA "IWSCHEMAA39471_1d"" through JDBC connection finished successfully
+ Data-Flows  Oct 21, 2021 12:27:05 PM   SQW03275I: Execution of SQL statement "INSERT INTO PRODUCT_140.RESULT1 (PNAME)
+  SELECT Q213.PNAME AS PNAME
+    FROM PRODUCT_140.PRODUCT Q213
+    WHERE (Q213.PID = 3266)" through JDBC connection finished successfully
+ Data-Flows  Oct 21, 2021 12:27:05 PM   SQW03276E: Execution of SQL statement "INSERT INTO PRODUCT_140.RESULT2 (PID, PNAME)
+  SELECT Q118.PID AS PID, Q118.PID AS PID_1
+    FROM PRODUCT_140.PRODUCT Q118
+    WHERE (Q118.PNAME = 'Eureka Forbes vacumm')" through JDBC connection failed. Exception: SQL Exception. SQL state = 42703; error code = -206; error Message = "PNAME" is not valid in the context where it is used.. SQLCODE=-206, SQLSTATE=42703, DRIVER=4.7.89SQL Exception. SQL state = 56098; error code = -727; error Message = An error occurred during implicit system action type "2". Information returned for the error includes SQLCODE "-206", SQLSTATE "42703" and message tokens "PNAME".. SQLCODE=-727, SQLSTATE=56098, DRIVER=4.7.89SQL Exception. SQL state = 56098; error code = -727; error Message = An error occurred during implicit system action type "2". Information returned for the error includes SQLCODE "-206", SQLSTATE "42703" and message tokens "PNAME".. SQLCODE=-727, SQLSTATE=56098, DRIVER=4.7.89
+ Data-Flows  Oct 21, 2021 12:27:05 PM   SQW03368I: Dumping variable values : 
+     ${INT-RES/RUN-ID} = A39471
+     ${RESERVED/APP_NAME} = ProductDataFlow
+     ${RESERVED/APP_PATH} = C:/Users/student/Desktop/190953140/Product/run-profiles/rpa38483/
+     ${RESERVED/CURRENT_TIMESTAMP} = 2021-10-21 12:27:05
+     ${RESERVED/DATE} = 2021-10-21
+     ${RESERVED/DAYNAME_SHORT} = Thu
+     ${RESERVED/DAYNAME} = Thursday
+     ${RESERVED/DAY} = 21
+     ${RESERVED/INSTANCE_NAME} = SQW005
+     ${RESERVED/MISC_DIR} = C:/Users/student/Desktop/190953140\Product\package-misc\
+     ${RESERVED/MONTHNAME_SHORT} = Oct
+     ${RESERVED/MONTHNAME} = October
+     ${RESERVED/MONTH} = 10
+     ${RESERVED/PROC_NAME} = ProductDataFlow
+     ${RESERVED/RUN_ID} = A39471
+     ${RESERVED/START_TIMESTAMP} = 2021-10-21 12:27:04
+     ${RESERVED/TIME} = 12:27:04
+     ${RESERVED/TMP_DIR} = C:/Users/student/Desktop/190953140/Product/run-profiles/tmp\ProductDataFlow_SQW005
+     ${RESERVED/USER_DIR} = C:\Program Files\IBM\ISWarehouse\ds
+     ${RESERVED/USER_HOME} = C:\Users\student
+     ${RESERVED/USER_NAME} = student
+     ${RESERVED/YEAR} = 2021
+ Data-Flows  Oct 21, 2021 12:27:05 PM   SQW03408I: Flow execution finished for SQW005 (/Product/data-flows/ProductDataFlow)
+ Data-Flows  Oct 21, 2021 12:27:05 PM   SQW38508I: Closing log file C:/Users/student/Desktop/190953140/Product/run-profiles/logs/ProductDataFlow_SQW005.txt.

@@ -1,0 +1,37 @@
+ Data-Flows  Oct 21, 2021 12:15:31 PM   SQW03415I: Flow execution started for SQW003 (/Product/data-flows/ProductDataFlow)
+ Data-Flows  Oct 21, 2021 12:15:31 PM   SQW38501I: Execution log file:  C:/Users/student/Desktop/190953140/Product/run-profiles/logs/ProductDataFlow_SQW003.txt
+ Data-Flows  Oct 21, 2021 12:15:31 PM   SQW38509I: Execution temporary work directory:  C:/Users/student/Desktop/190953140/Product/run-profiles/tmp\ProductDataFlow_SQW003
+ Data-Flows  Oct 21, 2021 12:15:34 PM   SQW03275I: Execution of SQL statement "SET CURRENT SCHEMA "IWSCHEMA990803_f"" through JDBC connection finished successfully
+ Data-Flows  Oct 21, 2021 12:15:34 PM   SQW03275I: Execution of SQL statement "INSERT INTO PRODUCT_140.RESULT1 (PNAME)
+  SELECT Q217.PNAME AS PNAME
+    FROM PRODUCT_140.PRODUCT Q217
+    WHERE (Q217.PID = 3266)" through JDBC connection finished successfully
+ Data-Flows  Oct 21, 2021 12:15:34 PM   SQW03275I: Execution of SQL statement "INSERT INTO PRODUCT_140.RESULT2 (PID, PNAME)
+  SELECT Q118.PID AS PID, Q118.PNAME AS PNAME
+    FROM PRODUCT_140.PRODUCT Q118
+    WHERE ((Q118.PNAME = 'Eureka Forbes vacumm') OR (Q118.PNAME = 'Aquaquard water purifier'))" through JDBC connection finished successfully
+ Data-Flows  Oct 21, 2021 12:15:34 PM   SQW03368I: Dumping variable values : 
+     ${INT-RES/RUN-ID} = 990803
+     ${RESERVED/APP_NAME} = ProductDataFlow
+     ${RESERVED/APP_PATH} = C:/Users/student/Desktop/190953140/Product/run-profiles/rp98fb3b/
+     ${RESERVED/CURRENT_TIMESTAMP} = 2021-10-21 12:15:33
+     ${RESERVED/DATE} = 2021-10-21
+     ${RESERVED/DAYNAME_SHORT} = Thu
+     ${RESERVED/DAYNAME} = Thursday
+     ${RESERVED/DAY} = 21
+     ${RESERVED/INSTANCE_NAME} = SQW003
+     ${RESERVED/MISC_DIR} = C:/Users/student/Desktop/190953140\Product\package-misc\
+     ${RESERVED/MONTHNAME_SHORT} = Oct
+     ${RESERVED/MONTHNAME} = October
+     ${RESERVED/MONTH} = 10
+     ${RESERVED/PROC_NAME} = ProductDataFlow
+     ${RESERVED/RUN_ID} = 990803
+     ${RESERVED/START_TIMESTAMP} = 2021-10-21 12:15:33
+     ${RESERVED/TIME} = 12:15:33
+     ${RESERVED/TMP_DIR} = C:/Users/student/Desktop/190953140/Product/run-profiles/tmp\ProductDataFlow_SQW003
+     ${RESERVED/USER_DIR} = C:\Program Files\IBM\ISWarehouse\ds
+     ${RESERVED/USER_HOME} = C:\Users\student
+     ${RESERVED/USER_NAME} = student
+     ${RESERVED/YEAR} = 2021
+ Data-Flows  Oct 21, 2021 12:15:34 PM   SQW03408I: Flow execution finished for SQW003 (/Product/data-flows/ProductDataFlow)
+ Data-Flows  Oct 21, 2021 12:15:34 PM   SQW38508I: Closing log file C:/Users/student/Desktop/190953140/Product/run-profiles/logs/ProductDataFlow_SQW003.txt.

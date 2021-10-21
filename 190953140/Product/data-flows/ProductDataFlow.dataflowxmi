@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.datatools.etl.dataflow.view:ETLFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.datatools.etl.dataflow.view="http:///com/ibm/datatools/etl/dataflow/view.ecore">
+  <elements xsi:type="com.ibm.datatools.etl.dataflow.view:ETLOperatorConnection" source="//@elements.2/@outputs.0" target="//@elements.1/@inputs.0">
+    <elements xsi:type="com.ibm.datatools.etl.dataflow.view:ETLConnection" source="//@elements.2/@outputs.0/@fields.1/@output" target="//@elements.1/@inputs.0/@fields.1/@input"/>
+    <elements xsi:type="com.ibm.datatools.etl.dataflow.view:ETLConnection" source="//@elements.2/@outputs.0/@fields.0/@output" target="//@elements.1/@inputs.0/@fields.0/@input"/>
+    <operatorLink href="ProductDataFlow.etlmetadataxmi#//@linkList.0"/>
+  </elements>
+  <elements xsi:type="com.ibm.datatools.etl.dataflow.view:ETLOperator" x="324" y="205" height="-1" width="-1" type="http:///com/ibm/datatools/etl/dataflow/base.ui.oplib/Target/DBTargets/SQLInsert">
+    <inputs incomingConnection="//@elements.0">
+      <fields name="PID">
+        <input incomingConnection="//@elements.0/@elements.1"/>
+        <output type="OutputPort"/>
+      </fields>
+      <fields name="PNAME">
+        <input incomingConnection="//@elements.0/@elements.0"/>
+        <output type="OutputPort"/>
+      </fields>
+      <operatorPort href="ProductDataFlow.etlmetadataxmi#//@operatorMap.1/@value/@inputPortMap.0/@value"/>
+    </inputs>
+    <outputs type="OutputPort">
+      <fields name="PNAME">
+        <input/>
+        <output type="OutputPort"/>
+      </fields>
+      <operatorPort href="ProductDataFlow.etlmetadataxmi#//@operatorMap.1/@value/@outputPortMap.0/@value"/>
+    </outputs>
+    <operator href="ProductDataFlow.etlmetadataxmi#//@operatorMap.1/@value"/>
+  </elements>
+  <elements xsi:type="com.ibm.datatools.etl.dataflow.view:ETLOperator" x="102" y="166" height="-1" width="-1" type="http:///com/ibm/datatools/etl/dataflow/core.oplib/Extract/DBSources/TableSelect">
+    <outputs type="OutputPort" outgoingConnections="//@elements.0">
+      <fields name="PID">
+        <input/>
+        <output type="OutputPort" outgoingConnections="//@elements.0/@elements.1"/>
+      </fields>
+      <fields name="PNAME">
+        <input/>
+        <output type="OutputPort" outgoingConnections="//@elements.0/@elements.0"/>
+      </fields>
+      <operatorPort href="ProductDataFlow.etlmetadataxmi#//@operatorMap.0/@value/@outputPortMap.0/@value"/>
+    </outputs>
+    <operator href="ProductDataFlow.etlmetadataxmi#//@operatorMap.0/@value"/>
+  </elements>
+  <elements xsi:type="com.ibm.datatools.etl.dataflow.view:ETLOperator" x="75" y="298" height="-1" width="-1" type="http:///com/ibm/datatools/etl/dataflow/core.oplib/Extract/DBSources/TableSelect">
+    <outputs type="OutputPort" outgoingConnections="//@elements.4">
+      <fields name="PID">
+        <input/>
+        <output type="OutputPort" outgoingConnections="//@elements.4/@elements.1"/>
+      </fields>
+      <fields name="PID_1">
+        <input/>
+        <output type="OutputPort" outgoingConnections="//@elements.4/@elements.0"/>
+      </fields>
+      <operatorPort href="ProductDataFlow.etlmetadataxmi#//@operatorMap.2/@value/@outputPortMap.0/@value"/>
+    </outputs>
+    <operator href="ProductDataFlow.etlmetadataxmi#//@operatorMap.2/@value"/>
+  </elements>
+  <elements xsi:type="com.ibm.datatools.etl.dataflow.view:ETLOperatorConnection" source="//@elements.3/@outputs.0" target="//@elements.5/@inputs.0">
+    <elements xsi:type="com.ibm.datatools.etl.dataflow.view:ETLConnection" source="//@elements.3/@outputs.0/@fields.1/@output" target="//@elements.5/@inputs.0/@fields.1/@input"/>
+    <elements xsi:type="com.ibm.datatools.etl.dataflow.view:ETLConnection" source="//@elements.3/@outputs.0/@fields.0/@output" target="//@elements.5/@inputs.0/@fields.0/@input"/>
+    <operatorLink href="ProductDataFlow.etlmetadataxmi#//@linkList.1"/>
+  </elements>
+  <elements xsi:type="com.ibm.datatools.etl.dataflow.view:ETLOperator" x="452" y="324" height="-1" width="-1" type="http:///com/ibm/datatools/etl/dataflow/base.ui.oplib/Target/DBTargets/SQLInsert">
+    <inputs incomingConnection="//@elements.4">
+      <fields name="PID">
+        <input incomingConnection="//@elements.4/@elements.1"/>
+        <output type="OutputPort"/>
+      </fields>
+      <fields name="PID_1">
+        <input incomingConnection="//@elements.4/@elements.0"/>
+        <output type="OutputPort"/>
+      </fields>
+      <operatorPort href="ProductDataFlow.etlmetadataxmi#//@operatorMap.3/@value/@inputPortMap.0/@value"/>
+    </inputs>
+    <outputs type="OutputPort">
+      <fields name="PID">
+        <input/>
+        <output type="OutputPort"/>
+      </fields>
+      <operatorPort href="ProductDataFlow.etlmetadataxmi#//@operatorMap.3/@value/@outputPortMap.0/@value"/>
+    </outputs>
+    <operator href="ProductDataFlow.etlmetadataxmi#//@operatorMap.3/@value"/>
+  </elements>
+  <dataflow href="ProductDataFlow.etlmetadataxmi#/"/>
+</com.ibm.datatools.etl.dataflow.view:ETLFlow>
