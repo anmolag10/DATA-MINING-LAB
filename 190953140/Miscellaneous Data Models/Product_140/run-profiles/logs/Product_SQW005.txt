@@ -1,0 +1,45 @@
+ Data-Flows  Oct 25, 2021 9:33:04 AM   SQW03415I: Flow execution started for SQW005 (/Product_140/data-flows/Product)
+ Data-Flows  Oct 25, 2021 9:33:04 AM   SQW38501I: Execution log file:  C:/Users/student/Desktop/DATA-MINING-LAB-main/190953140/Product_140/run-profiles/logs/Product_SQW005.txt
+ Data-Flows  Oct 25, 2021 9:33:04 AM   SQW38509I: Execution temporary work directory:  C:/Users/student/Desktop/DATA-MINING-LAB-main/190953140/Product_140/run-profiles/tmp\Product_SQW005
+ Data-Flows  Oct 25, 2021 9:33:06 AM   SQW03275I: Execution of SQL statement "SET CURRENT SCHEMA "IWSCHEMA9DBB6A_1c"" through JDBC connection finished successfully
+ Data-Flows  Oct 25, 2021 9:33:06 AM   SQW03275I: Execution of SQL statement "INSERT INTO PRODUCT_140.RESULT_3 (SNAME)
+  SELECT Q625.SNAME AS SNAME
+    FROM PRODUCT_140.SUPPLY Q622, PRODUCT_140.SUPPLIER Q625
+    WHERE (Q622.SID = Q625.SID) AND (Q622.PID = 3266)" through JDBC connection finished successfully
+ Data-Flows  Oct 25, 2021 9:33:06 AM   SQW03275I: Execution of SQL statement "INSERT INTO PRODUCT_140.RESULT2 (PID)
+  SELECT Q637.PID AS PID
+    FROM PRODUCT_140.PRODUCT Q637
+    WHERE (Q637.PNAME IN ('Orange', 'Apple'))" through JDBC connection finished successfully
+ Data-Flows  Oct 25, 2021 9:33:06 AM   SQW03275I: Execution of SQL statement "INSERT INTO PRODUCT_140.RESULT7 (SNAME)
+  SELECT Q520.SNAME AS SNAME
+    FROM (SELECT Q513.SNAME AS SNAME, COUNT(Q513.PID) AS C2
+            FROM (SELECT Q652.SNAME AS SNAME, Q655.PID AS PID
+                    FROM PRODUCT_140.SUPPLIER Q652, PRODUCT_140.SUPPLY Q655
+                    WHERE (Q652.SID = Q655.SID)) Q513
+            GROUP BY Q513.SNAME) Q520
+    WHERE (Q520.C2 > 1)" through JDBC connection finished successfully
+ Data-Flows  Oct 25, 2021 9:33:06 AM   SQW03368I: Dumping variable values : 
+     ${INT-RES/RUN-ID} = 9DBB6A
+     ${RESERVED/APP_NAME} = Product
+     ${RESERVED/APP_PATH} = C:/Users/student/Desktop/DATA-MINING-LAB-main/190953140/Product_140/run-profiles/rp9dadc0/
+     ${RESERVED/CURRENT_TIMESTAMP} = 2021-10-25 09:33:06
+     ${RESERVED/DATE} = 2021-10-25
+     ${RESERVED/DAYNAME_SHORT} = Mon
+     ${RESERVED/DAYNAME} = Monday
+     ${RESERVED/DAY} = 25
+     ${RESERVED/INSTANCE_NAME} = SQW005
+     ${RESERVED/MISC_DIR} = C:/Users/student/Desktop/DATA-MINING-LAB-main/190953140\Product_140\package-misc\
+     ${RESERVED/MONTHNAME_SHORT} = Oct
+     ${RESERVED/MONTHNAME} = October
+     ${RESERVED/MONTH} = 10
+     ${RESERVED/PROC_NAME} = Product
+     ${RESERVED/RUN_ID} = 9DBB6A
+     ${RESERVED/START_TIMESTAMP} = 2021-10-25 09:33:05
+     ${RESERVED/TIME} = 09:33:05
+     ${RESERVED/TMP_DIR} = C:/Users/student/Desktop/DATA-MINING-LAB-main/190953140/Product_140/run-profiles/tmp\Product_SQW005
+     ${RESERVED/USER_DIR} = C:\Program Files\IBM\ISWarehouse\ds
+     ${RESERVED/USER_HOME} = C:\Users\student
+     ${RESERVED/USER_NAME} = student
+     ${RESERVED/YEAR} = 2021
+ Data-Flows  Oct 25, 2021 9:33:06 AM   SQW03408I: Flow execution finished for SQW005 (/Product_140/data-flows/Product)
+ Data-Flows  Oct 25, 2021 9:33:06 AM   SQW38508I: Closing log file C:/Users/student/Desktop/DATA-MINING-LAB-main/190953140/Product_140/run-profiles/logs/Product_SQW005.txt.

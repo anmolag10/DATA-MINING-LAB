@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--xtools2_universal_type_manager-->
+<xmi:XMI xmlns:datamodelversion="http://www.ibm.com/com.ibm.datatools.core/model/7.5.2.0" xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DB2Model="http:///com/ibm/db/models/db2/db2.ecore" xmlns:LUW="http:///com/ibm/db/models/db2/luw.ecore" xmlns:SQLConstraints="http:///org/eclipse/datatools/modelbase/sql/constraints.ecore" xmlns:SQLDataTypes="http:///org/eclipse/datatools/modelbase/sql/datatypes.ecore" xmlns:datanotation="http:///datanotation.ecore">
+  <LUW:LUWDatabase xmi:id="_Y4euQS_CEeybc_iYupE9MQ" name="Database" vendor="DB2 UDB" version="V9.7" schemas="_Y-AugC_CEeybc_iYupE9MQ"/>
+  <DB2Model:DB2Schema xmi:id="_Y-AugC_CEeybc_iYupE9MQ" name="PRODUCT_140" tables="_fjiRAC_CEeybc_iYupE9MQ _qBCxsC_CEeybc_iYupE9MQ _55OyYC_CEeybc_iYupE9MQ _CvE40DVBEeyCCa6U0VWSGw _svfUsDVDEeyCCa6U0VWSGw" database="_Y4euQS_CEeybc_iYupE9MQ">
+    <eAnnotations xmi:id="_Y-z_wC_CEeybc_iYupE9MQ" source="diagram">
+      <contents xsi:type="datanotation:DataDiagram" xmi:id="_Y-z_wS_CEeybc_iYupE9MQ" type="IE_CrowFoot" name="Diagram1" viewKind="ProjectExplorer" notation="IE_CrowFoot" kind="Physical">
+        <styles xsi:type="datanotation:DataAttributeStyle" xmi:id="_Y-z_wi_CEeybc_iYupE9MQ"/>
+        <styles xsi:type="datanotation:DataCompartmentStyle" xmi:id="_Y-z_wy_CEeybc_iYupE9MQ"/>
+        <styles xsi:type="datanotation:DataDisplayStyle" xmi:id="_Y-z_xC_CEeybc_iYupE9MQ"/>
+        <styles xsi:type="datanotation:DataDiagramRelationshipStyle" xmi:id="_Y-z_xS_CEeybc_iYupE9MQ"/>
+        <styles xsi:type="datanotation:DataShapeNameStyle" xmi:id="_Y-z_xi_CEeybc_iYupE9MQ"/>
+        <styles xsi:type="datanotation:DataDiagramFormattingStyle" xmi:id="_Y-z_xy_CEeybc_iYupE9MQ"/>
+        <element xsi:nil="true"/>
+      </contents>
+    </eAnnotations>
+  </DB2Model:DB2Schema>
+  <LUW:LUWTable xmi:id="_fjiRAC_CEeybc_iYupE9MQ" name="PRODUCT" schema="_Y-AugC_CEeybc_iYupE9MQ" referencingForeignKeys="_aj5RwC_DEeybc_iYupE9MQ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_hfpYYC_CEeybc_iYupE9MQ" name="PID" nullable="false" defaultValue="NULL">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_km9HkC_CEeybc_iYupE9MQ" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="30"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_lxOiUC_CEeybc_iYupE9MQ" name="PNAME">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_oOkugC_CEeybc_iYupE9MQ" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="30"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_OXg0cC_DEeybc_iYupE9MQ" name="PRODUCT_PK" members="_hfpYYC_CEeybc_iYupE9MQ" ForeignKey="_aj5RwC_DEeybc_iYupE9MQ"/>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_qBCxsC_CEeybc_iYupE9MQ" name="SUPPLIER" schema="_Y-AugC_CEeybc_iYupE9MQ" referencingForeignKeys="_4fOdEC_DEeybc_iYupE9MQ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_t8D1wC_CEeybc_iYupE9MQ" name="SID" nullable="false" defaultValue="NULL">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_0g9GIC_CEeybc_iYupE9MQ" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="30"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_1qA_8C_CEeybc_iYupE9MQ" name="SNAME">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_3nGXsC_CEeybc_iYupE9MQ" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="30"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_YG65AC_DEeybc_iYupE9MQ" name="SUPPLIER_PK" members="_t8D1wC_CEeybc_iYupE9MQ" ForeignKey="_4fOdEC_DEeybc_iYupE9MQ"/>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_55OyYC_CEeybc_iYupE9MQ" name="SUPPLY" schema="_Y-AugC_CEeybc_iYupE9MQ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_-PYTQC_CEeybc_iYupE9MQ" name="SID">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="__lACYC_CEeybc_iYupE9MQ" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="30"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_AsTosC_DEeybc_iYupE9MQ" name="PID">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_CTb-kC_DEeybc_iYupE9MQ" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="30"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_DdkPYC_DEeybc_iYupE9MQ" name="QTY">
+      <containedType xsi:type="SQLDataTypes:ApproximateNumericDataType" xmi:id="_IlOswC_DEeybc_iYupE9MQ" name="DOUBLE" primitiveType="DOUBLE_PRECISION"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_aj5RwC_DEeybc_iYupE9MQ" name="SUPPLY_PRODUCT_FK" label="" members="_AsTosC_DEeybc_iYupE9MQ" onDelete="CASCADE" uniqueConstraint="_OXg0cC_DEeybc_iYupE9MQ" referencedTable="_fjiRAC_CEeybc_iYupE9MQ">
+      <eAnnotations xmi:id="_aj5RwS_DEeybc_iYupE9MQ" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_aj5Rwi_DEeybc_iYupE9MQ" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="true"/>
+        <details xmi:id="_aj5Rwy_DEeybc_iYupE9MQ" key="FK_CHILD_MULTIPLICITY" value="*"/>
+        <details xmi:id="_aj5RxC_DEeybc_iYupE9MQ" key="FK_CHILD_ROLE_NAME" value="Verb1"/>
+        <details xmi:id="_aj5RxS_DEeybc_iYupE9MQ" key="FK_PARENT_MULTIPLICITY" value=""/>
+        <details xmi:id="_aj5Rxi_DEeybc_iYupE9MQ" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_4fOdEC_DEeybc_iYupE9MQ" name="SUPPLY_SUPPLIER_FK" members="_-PYTQC_CEeybc_iYupE9MQ" onDelete="CASCADE" uniqueConstraint="_YG65AC_DEeybc_iYupE9MQ" referencedTable="_qBCxsC_CEeybc_iYupE9MQ">
+      <eAnnotations xmi:id="_4fOdES_DEeybc_iYupE9MQ" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_4fOdEi_DEeybc_iYupE9MQ" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="true"/>
+        <details xmi:id="_4fOdEy_DEeybc_iYupE9MQ" key="FK_CHILD_MULTIPLICITY" value=""/>
+        <details xmi:id="_4fOdFC_DEeybc_iYupE9MQ" key="FK_CHILD_ROLE_NAME" value="Verb1"/>
+        <details xmi:id="_4fOdFS_DEeybc_iYupE9MQ" key="FK_PARENT_MULTIPLICITY" value=""/>
+        <details xmi:id="_4fOdFi_DEeybc_iYupE9MQ" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_CvE40DVBEeyCCa6U0VWSGw" name="RESULT2" schema="_Y-AugC_CEeybc_iYupE9MQ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_FE7V4DVBEeyCCa6U0VWSGw" name="PID">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_HRU8ADVBEeyCCa6U0VWSGw" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="30"/>
+    </columns>
+  </LUW:LUWTable>
+  <LUW:LUWTable xmi:id="_svfUsDVDEeyCCa6U0VWSGw" name="RESULT3" schema="_Y-AugC_CEeybc_iYupE9MQ">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_4hFTcDVDEeyCCa6U0VWSGw" name="SNAME">
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_64YiADVDEeyCCa6U0VWSGw" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="300"/>
+    </columns>
+  </LUW:LUWTable>
+</xmi:XMI>

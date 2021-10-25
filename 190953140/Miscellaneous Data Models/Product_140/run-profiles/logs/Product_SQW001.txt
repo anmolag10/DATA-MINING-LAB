@@ -1,0 +1,33 @@
+ Data-Flows  Oct 25, 2021 8:43:08 AM   SQW03415I: Flow execution started for SQW001 (/Product_140/data-flows/Product)
+ Data-Flows  Oct 25, 2021 8:43:08 AM   SQW38501I: Execution log file:  C:/Users/student/Desktop/DATA-MINING-LAB-main/190953140/Product_140/run-profiles/logs/Product_SQW001.txt
+ Data-Flows  Oct 25, 2021 8:43:08 AM   SQW38509I: Execution temporary work directory:  C:/Users/student/Desktop/DATA-MINING-LAB-main/190953140/Product_140/run-profiles/tmp\Product_SQW001
+ Data-Flows  Oct 25, 2021 8:43:11 AM   SQW03275I: Execution of SQL statement "SET CURRENT SCHEMA "IWSCHEMA7007FC_2"" through JDBC connection finished successfully
+ Data-Flows  Oct 25, 2021 8:43:11 AM   SQW03275I: Execution of SQL statement "INSERT INTO PRODUCT_140.RESULT2 (PID)
+  SELECT Q243.PID AS PID
+    FROM PRODUCT_140.PRODUCT Q243
+    WHERE (Q243.PNAME IN ('Eureka Forbes vacuum', 'Aquaquard water purifier'))" through JDBC connection finished successfully
+ Data-Flows  Oct 25, 2021 8:43:11 AM   SQW03368I: Dumping variable values : 
+     ${INT-RES/RUN-ID} = 7007FC
+     ${RESERVED/APP_NAME} = Product
+     ${RESERVED/APP_PATH} = C:/Users/student/Desktop/DATA-MINING-LAB-main/190953140/Product_140/run-profiles/rp6fef02/
+     ${RESERVED/CURRENT_TIMESTAMP} = 2021-10-25 08:43:11
+     ${RESERVED/DATE} = 2021-10-25
+     ${RESERVED/DAYNAME_SHORT} = Mon
+     ${RESERVED/DAYNAME} = Monday
+     ${RESERVED/DAY} = 25
+     ${RESERVED/INSTANCE_NAME} = SQW001
+     ${RESERVED/MISC_DIR} = C:/Users/student/Desktop/DATA-MINING-LAB-main/190953140\Product_140\package-misc\
+     ${RESERVED/MONTHNAME_SHORT} = Oct
+     ${RESERVED/MONTHNAME} = October
+     ${RESERVED/MONTH} = 10
+     ${RESERVED/PROC_NAME} = Product
+     ${RESERVED/RUN_ID} = 7007FC
+     ${RESERVED/START_TIMESTAMP} = 2021-10-25 08:43:10
+     ${RESERVED/TIME} = 08:43:10
+     ${RESERVED/TMP_DIR} = C:/Users/student/Desktop/DATA-MINING-LAB-main/190953140/Product_140/run-profiles/tmp\Product_SQW001
+     ${RESERVED/USER_DIR} = C:\Program Files\IBM\ISWarehouse\ds
+     ${RESERVED/USER_HOME} = C:\Users\student
+     ${RESERVED/USER_NAME} = student
+     ${RESERVED/YEAR} = 2021
+ Data-Flows  Oct 25, 2021 8:43:11 AM   SQW03408I: Flow execution finished for SQW001 (/Product_140/data-flows/Product)
+ Data-Flows  Oct 25, 2021 8:43:11 AM   SQW38508I: Closing log file C:/Users/student/Desktop/DATA-MINING-LAB-main/190953140/Product_140/run-profiles/logs/Product_SQW001.txt.
